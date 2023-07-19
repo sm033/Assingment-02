@@ -241,7 +241,7 @@
     cursor: pointer;
 }
 .image-wrapper:hover .overlay{
-   color: rgb(90, 90, 90);
+    color: rgb(90, 90, 90);
     opacity: 1;
 }
 .icon{
@@ -601,7 +601,21 @@
 
 /* footer end */
 @media screen and (max-width:576px) {
-    
+    .banner-container{
+        flex-direction: column;
+        width: 100%;
+        top: auto;
+        row-gap: 15px;
+    }
+    .card-container{
+        grid-template-columns: 1fr;
+        width: auto;
+        margin-left: 30px;
+    }
+    .nav-content{
+        flex-direction: column;
+    }
+
     
 }
 
