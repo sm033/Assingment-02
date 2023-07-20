@@ -4,7 +4,9 @@
 
 *{
     font-family: 'Lato', sans-serif;
-    font-family: 'Work Sans', sans-serif;}
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+}
     body{
         margin: 0 ;
     }
@@ -16,6 +18,7 @@
 .nav-content{
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
     align-items: center;
     padding: 0px 240px;
     background: #FFF;
@@ -607,21 +610,15 @@ background-clip: text;
 
 /* footer end */
 @media screen and (max-width:576px) {
-    .banner-container{
-        flex-direction: column;
-        width: 100%;
-        top: auto;
-        row-gap: 15px;
-    }
-    .card-container{
-        grid-template-columns: 1fr;
-        width: auto;
-        margin-left: 30px;
-    }
     .nav-content{
         flex-direction: column;
-    }
 
+    }
+    .nav-right{
+      
+        flex-direction: column;
+    }
+    
     
 }
 
